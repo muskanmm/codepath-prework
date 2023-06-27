@@ -1,5 +1,6 @@
 # CodePath Prework Project - Introduce Yourself
 App Description
+
 The project allows a user to input information through the application. Then, after pressing the "Introduce Yourself" button, the information is compiled into a brief introduction that is presented to the user through an alert box.  
 
 App Walk-though
