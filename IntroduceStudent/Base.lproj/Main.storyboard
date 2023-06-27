@@ -42,21 +42,21 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Pets" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xxg-iF-YR7">
-                                <rect key="frame" x="39" y="582" width="34" height="21"/>
+                                <rect key="frame" x="39" y="538" width="34" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="More Pets?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SKe-K0-ayq">
-                                <rect key="frame" x="39" y="640" width="86" height="21"/>
+                                <rect key="frame" x="39" y="596" width="86" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iEJ-Mn-DZ1">
-                                <rect key="frame" x="103" y="582" width="11" height="21"/>
+                                <rect key="frame" x="102" y="538" width="11" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -91,11 +91,11 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5L8-Ms-3z5">
-                                <rect key="frame" x="298" y="635" width="49" height="31"/>
+                                <rect key="frame" x="297" y="591" width="49" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </switch>
                             <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="MAz-Kb-VPV">
-                                <rect key="frame" x="251" y="576" width="94" height="32"/>
+                                <rect key="frame" x="250" y="532" width="94" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <action selector="stepperDidChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="n1K-r1-aqL"/>
@@ -110,16 +110,67 @@
                                     <action selector="introduceSelfDidTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Vsm-LY-5Vh"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5t5-2B-aE2">
+                                <rect key="frame" x="27" y="768" width="110" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="Light Mode"/>
+                                <connections>
+                                    <action selector="lightModeDidTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="USB-LU-McU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ghu-oq-oWw">
+                                <rect key="frame" x="267" y="767" width="108" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="Dark Mode"/>
+                                <connections>
+                                    <action selector="darkModeDidTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="874-YZ-5my"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cYi-2i-vqE">
+                                <rect key="frame" x="98" y="657" width="197" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Advanced Introduciton"/>
+                                <connections>
+                                    <action selector="advanceIntroDidTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="A36-hz-hYS"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Favorite Color" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DEP-CL-CWh">
+                                <rect key="frame" x="39" y="657" width="106" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Vju-wO-Glf">
+                                <rect key="frame" x="166" y="644" width="170" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
+                        <outlet property="advancedIntroButton" destination="cYi-2i-vqE" id="Om0-Yr-lBP"/>
+                        <outlet property="darkModeButton" destination="ghu-oq-oWw" id="kBK-Lv-8yr"/>
+                        <outlet property="favColorLabel" destination="DEP-CL-CWh" id="5JI-vt-pMt"/>
+                        <outlet property="favColorTextField" destination="Vju-wO-Glf" id="Zc8-OV-hHV"/>
+                        <outlet property="firstNameLabel" destination="Hy2-Vu-yHz" id="OcR-bc-LTK"/>
                         <outlet property="firstNameTextField" destination="g7K-qm-QYJ" id="ted-x1-99N"/>
+                        <outlet property="introduceButton" destination="1I1-00-h6K" id="bfx-za-fLo"/>
+                        <outlet property="lastNameLabel" destination="slk-R3-ASt" id="Ojo-cM-G5p"/>
                         <outlet property="lastNameTextField" destination="bjL-bC-FFr" id="aCr-ej-OKC"/>
+                        <outlet property="lightModeButton" destination="5t5-2B-aE2" id="dBZ-Oj-In4"/>
+                        <outlet property="morePetsLabel" destination="SKe-K0-ayq" id="COZ-bN-EWC"/>
                         <outlet property="morePetsStepper" destination="MAz-Kb-VPV" id="UMM-eT-Zze"/>
                         <outlet property="morePetsSwitch" destination="5L8-Ms-3z5" id="9N7-rH-FhM"/>
                         <outlet property="numberOfPetsLabel" destination="iEJ-Mn-DZ1" id="hxv-nI-Wu5"/>
+                        <outlet property="petsLabel" destination="xxg-iF-YR7" id="riT-PD-hu5"/>
+                        <outlet property="schoolNameLabel" destination="eAJ-ZQ-sig" id="prF-8f-YzB"/>
                         <outlet property="schoolNameTextField" destination="RBs-4c-eCh" id="I33-0z-Mdf"/>
                         <outlet property="yearSegmentedControl" destination="Iqq-Sz-I8w" id="cv2-2t-xDr"/>
                     </connections>
