@@ -95,7 +95,7 @@ class ViewController: UIViewController {
         
         self.morePetsStepper.backgroundColor = UIColor.white
         
-        //self.darkModeButton.backgroundColor = UIColor.white
+        self.darkModeButton.backgroundColor = UIColor.white
         self.lightModeButton.backgroundColor = UIColor.white
         self.introduceButton.backgroundColor = UIColor(red: 0.8706, green: 0.8784, blue: 0.8902, alpha: 1.0)
         
